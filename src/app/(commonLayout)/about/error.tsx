@@ -10,6 +10,7 @@ export default function AboutError({ error, reset }: { error: Error & { digest?:
     return (
         <div>
             <h1>Something went wrong!</h1>
+            <button onClick={reset}>Retry</button>
         </div>
     );
 }
